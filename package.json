@@ -1,0 +1,20 @@
+{
+  "name": "chromecast-custom-backdrop",
+  "description": "Application that can show Tweets as a custom backdrop for Chromecast",
+  "version": "0.0.1",
+  "private": false,
+  "main": "index.js",
+  "dependencies": {
+    "oauth": "^0.9.12",
+    "express": "^4.12.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mknichel/chromecast-custom-backdrop.git"
+  },
+  "author": "mknichel@users.noreply.github.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mknichel/chromecast-custom-backdrop/issues"
+  }
+}

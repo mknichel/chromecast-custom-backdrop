@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ChromeCast Backdrop</title>
+
+  <link rel="stylesheet" href="twitter.css">
+
+  <script src="//www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
+  <script src="chromecast.js"></script>
+  <script src="twitter.js"></script>
+
+</head>
+<body>
+  <input id="twitter_query" type="text">
+  <button id="search_twitter">Search Twitter</button>
+  <div id="tweet-container"></div>
+
+  <script>
+    maybeShowNextTweet();
+    scheduleTweetRotation();
+
+    document.getElementById('search_twitter').addEventListener(
+        'click',
+        function() {
+          searchTwitter(encodeURIComponent(
+              document.getElementById('twitter_query').value));
+        });
+  </script>
+</body>
+</html>
